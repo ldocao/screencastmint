@@ -54,6 +54,8 @@ group :development, :test do
   gem 'puma', '~> 2.13.4'
   # Rspec-rails is a testing framework for Rails
   gem 'rspec-rails', '~> 3.3.3'
+  # Autoload dotenv in Rails
+  gem 'dotenv-rails', '~> 2.0.2'
 end
 
 group :doc do
