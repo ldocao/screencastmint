@@ -56,6 +56,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.3.3'
   # Autoload dotenv in Rails
   gem 'dotenv-rails', '~> 2.0.2'
+  # Runs SMTP server which catches any message sent
+  gem 'mailcatcher', '~> 0.6.1'
 end
 
 group :doc do
