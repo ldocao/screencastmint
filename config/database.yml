@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: <%= ENV["SCM_DB_NAME"] %>
+  username: <%= ENV["SCM_DB_USER"] %>
+  password: <%= ENV["SCM_DB_PASSWORD"] %>
+
+production:
+  <<: *default
+  database: <%= ENV["SCM_DB_NAME_PROD"] %>
+  host: <%= ENV["SCM_DB_HOST_PROD"] %>
+  username: <%= ENV["SCM_DB_USER_PROD"] %>
+  password: <%= ENV["SCM_DB_PASSWORD_PROD"] %>
