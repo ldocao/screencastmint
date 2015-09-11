@@ -9,4 +9,6 @@
 # Ignore dotenv
 .env
 
+# Ignore db seeds
 
+/db/seeds.rb
