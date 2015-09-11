@@ -16,3 +16,9 @@ production:
   host: <%= ENV["SCM_DB_HOST_PROD"] %>
   username: <%= ENV["SCM_DB_USER_PROD"] %>
   password: <%= ENV["SCM_DB_PASSWORD_PROD"] %>
+
+test:
+  <<: *default
+  database: <%= ENV["SCM_DB_NAME_TEST"] %>
+  username: <%= ENV["SCM_DB_USER"] %>
+  password: <%= ENV["SCM_DB_PASSWORD"] %>
