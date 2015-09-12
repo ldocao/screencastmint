@@ -1,6 +1,3 @@
-
-body { font-family: 'pt_sansregular' }
-
 #bg-top {
 
   background: asset-url('mint.jpg') no-repeat center fixed;
@@ -29,7 +26,6 @@ body { font-family: 'pt_sansregular' }
         line-height: 20px;
         padding: 11px 18px;
         margin-left:-6px;
-        transition: background 0.15s ease 0s;
 
         &:hover { background-color:#EFF7F2 }
       }
@@ -56,9 +52,11 @@ footer {
   box-shadow:0 -2px 3px -1px rgba(0, 0, 0, 0.25);
   padding-top: 20px;
 
-  h3 { font-size: 1.5em; font-weight: normal }
+  h3 { font-size: 1.2em; font-weight: normal }
 
-  h4 { font-size: 1.2em; font-weight: normal }
+  h4 { font-size: 1.1em; font-weight: normal }
+
+  p{ line-height: 1.1em; font-size: 1em; color: #333 }
 
   ul {
     padding: 0;
@@ -68,6 +66,7 @@ footer {
       list-style: none;
       list-style-type: none;
       padding: 3px 0;
+      line-height: 1.1em;
 
       a {
         font-size: 1.1em;
@@ -82,7 +81,7 @@ footer {
     .item {
       display: inline-block;
       vertical-align: top;
-      margin:0 10px 30px 0;
+      margin:0 10px 20px 0;
 
       a { font-size: 2.2em }
     }
@@ -90,9 +89,13 @@ footer {
 
   #bottom-line {
     background-color: #EFEFEF;
-    border-bottom: 1px solid #CCC;
-    padding-top: 5px;
-    height: 45px
+    border-bottom: 4px solid #CCC;
+    height: 56px;
+
+    p {
+      padding: 10px 4px;
+      em { color:#888; }
+    }
   }
 
 

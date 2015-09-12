@@ -15,3 +15,15 @@
  *= require foundation_and_overrides
 
  */
+
+body { font-family: 'pt_sansregular' }
+
+p { color: #333 }
+
+a {
+  color:#013d1e;
+
+  &:hover{
+    color: #049F51;
+  }
+}
