@@ -218,17 +218,31 @@
 
   .row { margin-bottom: 10px }
 
-  .label {
-    font-size: 1.2em;
-    margin: 0 4px;
-    border-radius: 4px;
-    color: #FFF;
-    padding: 1px 5px 2px 5px;
+  .label { margin: 0 4px }
+
+  .begin  { background-color: #00a89d }
+  .easy   { background-color: #fb933a }
+  .medium { background-color: #f65735 }
+  .hard   { background-color: #db2525 }
+  .expert { background-color: #014e75 }
+}
+
+// Contributor page
+#static-contributor {
+
+  h2 {
+    font-size: 1.4em;
+    line-height: 1em;
+    margin-top: -2px;
+
+    a {
+
+    }
   }
 
-  .begin { background-color: #00a89d }
-  .easy { background-color: #fb933a }
-  .medium { background-color: #f65735 }
-  .hard { background-color: #db2525 }
-  .expert { background-color: #014e75 }
+  .row { margin-bottom: 10px }
+
+  .label { margin: 2px 4px 0 0 }
+
+  .tag { background-color: #0B482B }
 }
