@@ -27,7 +27,7 @@ html lang="fr"
     header
       .row
         div class="small-4 end columns"
-          == link_to '/'
+          == link_to "/"
             == image_tag "logo-medium.jpg"
 
 
@@ -40,9 +40,11 @@ html lang="fr"
           h3.footer-title Screencastmint
           ul
             li
-              == link_to 'Ma page', '...'
+              == link_to "En savoir plus", "/a-propos"
             li
-              == link_to 'Ma page', '...'
+              == link_to "L'équipe", "/l-equipe-de-contributeurs"
+            li
+              == link_to "Les niveaux", "/niveaux-tutos"
 
 
         div class="hide-for-small-only medium-4 columns"
@@ -64,7 +66,7 @@ html lang="fr"
                 | Bienvenue sur screencastmint.com plateforme de vidéo partage autour des métiers de l'informatique et des nouvelles technologies.
               br
             div class="small-4 columns"
-              == image_tag 'logo-medium.jpg'
+              == image_tag "logo-medium.jpg"
           .row
             div id="follows" class="small-12 columns"
               h4 Nous suivre

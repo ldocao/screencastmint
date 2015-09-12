@@ -5,19 +5,19 @@
   background-size: cover; /* version standardisée */
 
   #top-navbar {
-    height:42px;
+    height: 42px;
 
     .top-nav-pills > li {
       float: left;
       margin-right: 5px;
-      list-style:none;
+      list-style: none;
 
       &.active > a { }
-      &.active, &.active > a { background-color:#FFF }
+      &.active, &.active > a { background-color: #FFF }
 
       a {
         text-transform: capitalize;
-        display:block;
+        display: block;
         border: medium none;
         color: #222;
         font-weight: bold;
@@ -25,9 +25,9 @@
         letter-spacing: 0.12em;
         line-height: 20px;
         padding: 11px 18px;
-        margin-left:-6px;
+        margin-left: -6px;
 
-        &:hover { background-color:#EFF7F2 }
+        &:hover { background-color: #EFF7F2 }
       }
     }
   }
@@ -35,7 +35,7 @@
 
 header {
   height: 100px;
-  box-shadow:0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
   position: relative;
   z-index: 2;
@@ -49,14 +49,12 @@ header {
 
 footer {
   margin-top: 50px;
-  box-shadow:0 -2px 3px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.25);
   padding-top: 20px;
 
   h3 { font-size: 1.2em; font-weight: normal }
 
   h4 { font-size: 1.1em; font-weight: normal }
-
-  p{ line-height: 1.1em; font-size: 1em; color: #333 }
 
   ul {
     padding: 0;
@@ -69,7 +67,8 @@ footer {
       line-height: 1.1em;
 
       a {
-        font-size: 1.1em;
+        font-size: 1em;
+        font-weight: normal;
         color: #666
       }
     }
@@ -81,7 +80,7 @@ footer {
     .item {
       display: inline-block;
       vertical-align: top;
-      margin:0 10px 20px 0;
+      margin: 0 10px 20px 0;
 
       a { font-size: 2.2em }
     }
@@ -94,13 +93,13 @@ footer {
 
     p {
       padding: 10px 4px;
-      em { color:#888 }
+
+      em { color: #888 }
     }
   }
 
 
   .tweets{
-
     margin-bottom: 30px !important;
 
     h4{
@@ -109,10 +108,6 @@ footer {
     }
 
     p{
-      margin: 0;
-      font-size: 0.9em;
-      color: #555;
-
       em { color: #AAA }
     }
   }
