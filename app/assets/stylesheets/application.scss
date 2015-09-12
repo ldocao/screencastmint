@@ -16,11 +16,9 @@
 
  */
 
-body { font-family: 'pt_sansregular' }
+body { font-family: 'pt_sansregular', 'Helvetica Neue', 'sans-serif' }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-}
+h1, h2, h3, h4, h5, h6 { line-height: 1.4 }
 
 h2{
   font-size: 2em;
@@ -29,10 +27,10 @@ h2{
 
 h3 { font-size: 1.5em }
 
-p { line-height:1.3em; font-size:0.9em; color: #888 }
+p { line-height: 1.3em; font-size: 0.9em; color: #888 }
 
 a {
-  color:#013d1e;
+  color: #013d1e;
 
   &:hover { color: #049F51 }
 }
@@ -43,7 +41,7 @@ a {
 
   h1, h2 {
     font-weight: bold !important;
-    color:#D2D2D2 !important;
+    color: #D2D2D2 !important;
   }
 }
 
@@ -58,6 +56,6 @@ a {
   p{
     font-size: 1.1em;
     line-height: 1.6em;
-    color:#666;
+    color: #666;
   }
 }

@@ -1,6 +1,11 @@
 // Home page
 #static-index {
 
+  h2, h3 {
+    font-weight: normal;
+    color: #013D1E;
+  }
+
   .row{
     margin-top: 5px;
 
@@ -26,11 +31,6 @@
           }
         }
       }
-    }
-
-    h2, h3 {
-      font-weight: normal;
-      color: #013D1E;
     }
 
     &.spaces {
@@ -138,7 +138,7 @@
     padding-bottom: 30px;
 
     h3 {
-      color:#d2d2d2 !important;
+      color: #d2d2d2 !important;
       font-weight: normal
     }
 
@@ -173,17 +173,16 @@
         margin: 0 auto;
       }
 
-      strong{
-        position: relative;
+      strong {
         z-index: 2;
+        position: relative;
         margin-top: -68px;
         font-size: 2.4em;
-        font-family: 'pt_sansregular', 'Helvetica Neue', 'sans-serif';
         font-weight: normal;
         display: block;
         text-align: center;
 
-        i{
+        i {
           font-size: 0.7em;
           font-style: normal;
         }
@@ -191,8 +190,6 @@
     }
   }
 }
-
-
 
 // About page
 #static-about{
@@ -209,7 +206,7 @@
       color: #FFF;
       text-decoration: none;
 
-      &:hover { color:#fff }
+      &:hover { color: #fff }
     }
 
     &:hover { border-bottom: 5px solid #e45735 }
@@ -223,15 +220,15 @@
 
   .label {
     font-size: 1.2em;
-    margin:0 4px;
+    margin: 0 4px;
     border-radius: 4px;
-    color:#FFF;
+    color: #FFF;
     padding: 1px 5px 2px 5px;
   }
 
-  .begin { background-color:#00a89d }
-  .easy { background-color:#fb933a }
-  .medium { background-color:#f65735 }
-  .hard { background-color:#db2525 }
-  .expert { background-color:#014e75 }
+  .begin { background-color: #00a89d }
+  .easy { background-color: #fb933a }
+  .medium { background-color: #f65735 }
+  .hard { background-color: #db2525 }
+  .expert { background-color: #014e75 }
 }
