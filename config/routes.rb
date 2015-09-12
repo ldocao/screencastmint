@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
   root "statics#index"
+
+  #
+  # Statics
+  get "accueil"                     => "statics#index"
+  get "a-propos"                    => "statics#about"
+  get "niveaux-tutos"               => "statics#levels"
+  get "l-equipe-de-contributeurs"   => "statics#contributors"
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
