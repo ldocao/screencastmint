@@ -1,5 +1,9 @@
 module TweetsHelper
 
+  # Change input date to french tweet date
+  #
+  # @param [Date] date of tweet
+  # @return [String] date of tweet
   def render_tweet_date(input_date)
     input_date = input_date.to_s.split(" ")
     entire_date = input_date[0]
@@ -12,6 +16,10 @@ module TweetsHelper
     "Posté le #{day} #{month} #{year}"
   end
 
+  # Make content links clickable
+  #
+  # @param [String] tweet content
+  # @return [String] tweet with links
   def render_tweet_link(content)
     words = content.to_s.split(' ')
     w = ""
@@ -27,6 +35,10 @@ module TweetsHelper
     return w
   end
 
+  # Convert month number to french name
+  #
+  # @param [Integer] month number
+  # @return [String] french month
   def french_months(month_number)
 
     case month_number

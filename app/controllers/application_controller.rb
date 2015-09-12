@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :followers, :count_followers, :last_tweets
 
+
   def followers
     Tweet.followers
   end
