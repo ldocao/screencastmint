@@ -27,7 +27,7 @@ html lang="fr"
     header
       .row
         div class="small-4 end columns"
-          == link_to '/'
+          == link_to "/"
             == image_tag "logo-medium.jpg"
 
 
@@ -40,9 +40,11 @@ html lang="fr"
           h3.footer-title Screencastmint
           ul
             li
-              == link_to 'Ma page', '...'
+              == link_to "En savoir plus", "/a-propos"
             li
-              == link_to 'Ma page', '...'
+              == link_to "L'équipe", "/l-equipe-de-contributeurs"
+            li
+              == link_to "Les niveaux", "/niveaux-tutos"
 
 
         div class="hide-for-small-only medium-4 columns"
