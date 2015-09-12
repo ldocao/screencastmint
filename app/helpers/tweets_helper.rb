@@ -20,13 +20,21 @@ module TweetsHelper
   #
   # @param [String] tweet content
   # @return [String] tweet with links
-  def render_tweet_link(content)
-    words = content.to_s.split(' ')
-    w = ""
+  def render_tweet_content(content)
+    words = content.to_s.split(/[\s,-]/)
 
+    w = ""
     words.each do |word|
+      name = word[1..word.length]
+
       w << if word[0..3] == "http"
         (link_to "#{word} ", "#{word}", target: "_blank")
+      elsif word.first == "#"
+        (link_to "#{word} ", "https://twitter.com/hashtag/#{name}", target: "_blank")
+      elsif word.first == "@"
+        (link_to "#{word} ", "https://twitter.com/#{name}", target: "_blank")
+      elsif word.first == "["
+        "<span>#{word}</span> "
       else
         "#{word} "
       end
@@ -35,6 +43,7 @@ module TweetsHelper
     return w
   end
 
+  private
   # Convert month number to french name
   #
   # @param [Integer] month number
