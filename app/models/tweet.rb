@@ -24,10 +24,15 @@ class Tweet < ActiveRecord::Base
   def self.last_tweets(user, numbers)
     self.connect_twitter
 
+    users = ["@#{user}", "#{user}"]
     ary = []
-    @client.search("#{user}").take(numbers).collect { |tweet| ary << tweet }
 
-    ary
+    users.each do |user|
+      @client.search("#{user}").collect { |tweet| ary << tweet }
+    end
+
+    tweets = ary.sort_by { |tweet| tweet.created_at }
+    tweets.reverse.take(numbers)
   end
 
   private
