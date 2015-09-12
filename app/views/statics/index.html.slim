@@ -1,1 +1,70 @@
-h1 Homepage
+#static-index
+  .row
+    div class="small-12 columns"
+      div id="screencasts-line" class="row"
+        div class="small-4 columns"
+          .row
+            div class="small-12 columns"
+              == image_tag 'play.jpg', :class => "img_home"
+            div class="small-12 columns"
+              h1 Vidéos tuto
+            div class="small-12 columns"
+              p Plein de tutos en Français partagé par des passionnés d'informatique et de nouvelles technologies !
+        div class="small-4 columns"
+          .row
+            div class="small-12 columns"
+              == image_tag 'formation.jpg', :class => "img_home"
+            div class="small-12 columns"
+              h2 Formations complètes
+            div class="small-12 columns"
+              p Découvrez une technologie, un langage ou un logiciel avec les formations longues de screencastmint !
+        div class="small-4 columns"
+          .row
+            div class="small-12 columns"
+              == image_tag 'projets.jpg', :class => "img_home"
+            div class="small-12 columns"
+              h2 Projets open source
+            div class="small-12 columns"
+              p Mettez un pied dans l'univers de l'open source grâce aux projets screencastmint et leurs documentations vidéo !
+
+  div class="bar image about"
+    .row
+      div class="small-6 medium-3 end columns"
+        h3 Screencasts
+        div id="screencast_count" class="circular"
+          strong
+
+      div class="small-6 medium-3 end columns hide-for-small-only"
+        h3 Followers
+        div id="followers_count" class="circular"
+          strong
+
+      div class="small-6 medium-3 end columns"
+        h3 Contributeurs
+        div id="coachs_count" class="circular"
+          strong
+
+      div class="small-6 medium-3 end columns hide-for-small-only"
+        h3 Partage
+        div id="motivation_count" class="circular"
+          strong
+
+  div class="bar light"
+    div class="row"
+      div class="small-12 columns"
+        h2 Projets open source
+        .row
+          div class="small-12 columns"
+            p ...
+
+
+
+  div class="row spaces"
+    div class="small-12 medium-7 columns"
+      h2 Derniers tutos
+      p ...
+
+    div class="small-12 medium-4 small-offset-0 medium-offset-1 end columns"
+      h2 Dernière formation
+      div class="small-8 medium-12 small-offset-2 medium-offset-0 end"
+        p ...
