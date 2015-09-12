@@ -1,0 +1,14 @@
+- last_tweets("@screencastmint", 2).each do |tweet|
+
+  div class="tweets" class="row"
+    div class="small-3 columns"
+      == image_tag(tweet.user.profile_image_url)
+
+    div class="small-9 columns"
+      h4
+        == link_to "@#{tweet.user.screen_name}", "https://twitter.com/#{tweet.user.screen_name}"
+      p
+        em
+          == tweet.created_at
+      p
+        == tweet.text
