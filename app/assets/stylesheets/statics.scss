@@ -1,8 +1,7 @@
+// About page
 #static-about{
 
   h2 { font-size: 1.7em }
-
-  p { line-height:1.3em; font-size: 0.9em; color: #888 }
 
   a { text-decoration: underline }
 
@@ -19,4 +18,24 @@
 
     &:hover { border-bottom: 5px solid #e45735 }
   }
+}
+
+// Level page
+#static-level {
+
+  .row { margin-bottom: 10px }
+
+  .label {
+    font-size: 1.2em;
+    margin:0 4px;
+    border-radius: 4px;
+    color:#FFF;
+    padding: 1px 5px 2px 5px;
+  }
+
+  .begin { background-color:#00a89d }
+  .easy { background-color:#fb933a }
+  .medium { background-color:#f65735 }
+  .hard { background-color:#db2525 }
+  .expert { background-color:#014e75 }
 }
