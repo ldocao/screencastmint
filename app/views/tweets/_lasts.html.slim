@@ -1,4 +1,4 @@
-- last_tweets("@screencastmint", 2).each do |tweet|
+- last_tweets("screencastmint", 2).each do |tweet|
   div class="tweets" class="row"
     div class="small-3 columns"
       == image_tag(tweet.user.profile_image_url)
@@ -9,5 +9,6 @@
       p
         em
           == render_tweet_date(tweet.created_at)
-      p
+
+      p.content
         == render_tweet_link(tweet.text)

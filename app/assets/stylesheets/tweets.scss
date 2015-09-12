@@ -1,0 +1,29 @@
+.tweets {
+  margin-bottom: 30px !important;
+
+  .columns {
+    margin: 0;
+    padding: 0;
+
+    h4 {
+      font-size: 1em;
+      margin-top: -5px
+    }
+
+    p {
+      margin-top: -8px;
+
+      em {
+        font-size:0.9em;
+        color: #AAA
+      }
+
+      &.content { margin-top: -2px }
+    }
+
+    img {
+      width: 50px;
+      margin-left: 14%
+    }
+  }
+}
