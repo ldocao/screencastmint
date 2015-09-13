@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  helper_method :followers, :count_followers, :last_tweets
+  helper_method :followers, :count_followers, :last_tweets, :commits
 
 
   def followers
@@ -15,5 +15,9 @@ class ApplicationController < ActionController::Base
 
   def last_tweets(from, numbers)
     Tweet.last_tweets(from, numbers)
+  end
+
+  def commits
+    Githuber.commits
   end
 end

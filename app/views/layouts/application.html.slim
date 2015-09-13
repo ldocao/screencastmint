@@ -33,13 +33,11 @@ html lang="fr"
           == link_to "/"
             == image_tag "logo-medium.jpg"
 
-
     == yield
-
 
     footer
       .row
-        div id="links" class="hide-for-small-only medium-3 columns"
+        div id="links" class="hide-for-small-only medium-2 columns"
           h3.footer-title Screencastmint
           ul
             li
@@ -50,15 +48,14 @@ html lang="fr"
               == link_to "Les niveaux", "/niveaux-tutos"
 
 
-        div class="hide-for-small-only medium-4 columns"
-          h3.footer-title Activité
+        div class="hide-for-small-only medium-5 columns"
+          h3.footer-title Derniers commits
           .row
             div class="small-12 columns"
               p
-                | Screencastmint est un projet open source disponible sur Github !
-              p ...
+                | Screencastmint est un projet open-source disponible sur Github !
 
-
+              == render "githubers/commits"
 
 
         div class="small-12 medium-5 columns"

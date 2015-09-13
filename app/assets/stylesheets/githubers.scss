@@ -1,0 +1,35 @@
+#githubers-commits {
+
+  .commit {
+    padding: 10px 0;
+    border-bottom: 1px solid #CCC;
+
+    h3 {
+      font-size: 0.9em;
+      margin-top: -3px
+    }
+
+    p { margin-top: -5px }
+
+    img { width: 55px }
+
+    .merge, .type, .footer-id {
+      display: inline-block; vertical-align: top;
+      border-radius: 2px;
+      padding: 0px 2px;
+    }
+
+    .merge {
+      background-color: #013d1e;
+      color: #FFF
+    }
+
+    .type { background-color: #00A89D; color: #FFF }
+
+    .footer-id {
+      background-color: #E5E5E5;
+      color: #777;
+      font-weight: bold
+    }
+  }
+}

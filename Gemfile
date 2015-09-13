@@ -38,6 +38,8 @@ gem 'chosen-rails', '~> 1.4.3'
 gem 'kaminari', '~> 0.16.2'
 # Turbolinks makes following links in your web application faster
 gem 'turbolinks', '~> 2.5.3'
+# Simple wrapper for the GitHub AP
+gem 'github_api', '~> 0.12.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
