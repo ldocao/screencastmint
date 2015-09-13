@@ -5,15 +5,9 @@ module TweetsHelper
   # @param [Date] date of tweet
   # @return [String] date of tweet
   def render_tweet_date(input_date)
-    input_date = input_date.to_s.split(" ")
-    entire_date = input_date[0]
-    current_date = entire_date.split("-")
+    current_date = input_date.strftime('%d/%m/%Y')
 
-    day   = current_date[2]
-    month = french_months(current_date[1])
-    year  = current_date[0]
-
-    "Posté le #{day} #{month} #{year}"
+    "Posté le #{current_date}"
   end
 
   # Make content links clickable

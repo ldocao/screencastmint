@@ -9,6 +9,5 @@
           == render_commit_content(commit.commit.message)
         p
           | Par&nbsp;
-          == link_to "#{commit.author.login}", "https://github.com/#{commit.author.login}"
-          | &nbsp;le&nbsp;
-          == commit.commit.author.date
+          == link_to "#{commit.author.login} ", "https://github.com/#{commit.author.login}"
+          == render_commit_date(commit.commit.author.date)

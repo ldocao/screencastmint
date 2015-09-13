@@ -25,4 +25,14 @@ module GithubersHelper
       return "#{type} #{subject}"
     end
   end
+
+  # Change input date to french date
+  #
+  # @param [Date] date of commit
+  # @return [String] date of commit
+  def render_commit_date(input_date)
+    current_date = input_date.to_datetime.strftime('%d/%m/%Y')
+
+    "le #{current_date}"
+  end
 end
