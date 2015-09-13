@@ -1,0 +1,14 @@
+#githubers-commits
+  - commits.take(5).each do |commit|
+    div class="commit row"
+      div class="small-2 columns"
+        == image_tag(commit.author.avatar_url)
+
+      div class="small-10 columns"
+        h3
+          == commit.commit.message
+        p
+          | Par&nbsp;
+          == link_to "#{commit.author.login}", "https://github.com/#{commit.author.login}"
+          | &nbsp;le&nbsp;
+          == commit.commit.author.date
