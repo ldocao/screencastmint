@@ -11,7 +11,7 @@ class Tweet < ActiveRecord::Base
 
   # Get numbers of followers
   #
-  # @return [String] the number of followers
+  # @return [Integer] the number of followers
   def self.count_followers
     self.connect_twitter
     @client.followers.count
