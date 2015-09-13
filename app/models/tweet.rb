@@ -4,16 +4,14 @@ class Tweet < ActiveRecord::Base
   #
   # @return [Array] list of followers
   def self.followers
-    self.client
-    @client.followers
+    self.client.followers
   end
 
   # Get numbers of followers
   #
   # @return [Integer] the number of followers
   def self.count_followers
-    self.client
-    @client.followers.count
+    self.client.followers.count
   end
 
   # Get last tweets
@@ -21,13 +19,11 @@ class Tweet < ActiveRecord::Base
   # @param [String, Integer] user and numbers of tweet
   # @return [Array] lasts tweets
   def self.last_tweets(user, numbers)
-    self.client
-
     users = ["@#{user}", "#{user}"]
     ary = []
 
     users.each do |user|
-      @client.search("#{user}").collect { |tweet| ary << tweet }
+      self.client.search("#{user}").collect { |tweet| ary << tweet }
     end
 
     tweets = ary.sort_by { |tweet| tweet.created_at }
@@ -37,7 +33,7 @@ class Tweet < ActiveRecord::Base
   private
 
   def self.client
-    @client ||= Twitter::REST::Client.new do |config|
+    client ||= Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV["TWITTER_CONSUMER_KEY"]
       config.consumer_secret     = ENV["TWITTER_CONSUMER_SECRET"]
       config.access_token        = ENV["TWITTER_ACCESS_TOKEN"]
