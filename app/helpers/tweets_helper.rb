@@ -17,11 +17,15 @@ module TweetsHelper
   def render_tweet_content(content)
     words = content.to_s.split(/[\s,-]/)
 
-    w = ""
+    content = ""
+
+    #
+    # Verify each words and apply link or span
+    # before including to content
     words.each do |word|
       name = word[1..word.length]
 
-      w << if word[0..3] == "http"
+      content << if word[0..3] == "http"
         (link_to "#{word} ", "#{word}", target: "_blank")
       elsif word.first == "#"
         (link_to "#{word} ", "https://twitter.com/hashtag/#{name}", target: "_blank")
@@ -34,10 +38,11 @@ module TweetsHelper
       end
     end
 
-    return w
+    return content
   end
 
   private
+
   # Convert month number to french name
   #
   # @param [Integer] month number

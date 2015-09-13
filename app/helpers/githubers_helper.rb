@@ -9,10 +9,11 @@ module GithubersHelper
     if /Merge/.match(content)
       "<span class='merge'>#{content}</span>"
     else
-      words = content.to_s.split(" ")
-      type = "<span class='type'>#{words.first}</span>"
-      ary_subjects = words[1..words.length]
+      words   = content.to_s.split(" ")
+      type    = "<span class='type'>#{words.first}</span>"
       subject = ""
+
+      ary_subjects = words[1..words.length]
 
       ary_subjects.each do |word|
         subject << if word.first == "#"
@@ -22,7 +23,7 @@ module GithubersHelper
         end
       end
 
-      return "#{type} #{subject}"
+      "#{type} #{subject}"
     end
   end
 

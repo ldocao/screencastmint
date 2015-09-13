@@ -20,7 +20,7 @@ class Tweet < ActiveRecord::Base
   # @return [Array] lasts tweets
   def self.last_tweets(user, numbers)
     users = ["@#{user}", "#{user}"]
-    ary = []
+    ary   = []
 
     users.each do |user|
       self.client.search("#{user}").collect { |tweet| ary << tweet }
