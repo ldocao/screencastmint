@@ -6,7 +6,7 @@
 
       div class="small-10 columns"
         h3
-          == commit.commit.message
+          == render_commit_content(commit.commit.message)
         p
           | Par&nbsp;
           == link_to "#{commit.author.login}", "https://github.com/#{commit.author.login}"
